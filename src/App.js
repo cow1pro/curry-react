@@ -4,7 +4,7 @@ import Employee from "./components/employee";
 import { useState } from 'react';
 
 function App() {
-  const [role,setRole] =useState('dev');
+  const [role,setRole] =useState('None');
  const showEmployees =true
   return (
     <div className="App">
@@ -13,8 +13,7 @@ function App() {
     <div> 
     <>
     <input type='text' onChange={(e)=>{
-      console.log(e.target.value);
-      setRole(e.target.value)
+     setRole(e.target.value)
     }}></input>
     </>
     <Employee name ="=kaushik" role ={role}/>

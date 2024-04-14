@@ -3,7 +3,8 @@ function Employee(props){
 
         <>
     <h3>Employee {props.name}</h3>
-    <p>{props.role ? props.role:'None'}</p>
+    <p>role= {props.role}</p>
+
     </>
     )
 }
